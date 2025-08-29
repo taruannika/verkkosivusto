@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <!--Font awesome-->
+    <script
+      src="https://kit.fontawesome.com/394a5f7d1f.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Happy Tails</title>
+  </head>
+  <body>
+    <!--HEADER STARTS-->
+    <header class="main-header">
+      <!--navigation starts-->
+      <nav class="main-nav container">
+        <a href="index.html" class="logo">Happy Tails</a>
+        <ul class="main-nav-list">
+          <li class="main-nav-item">
+            <a href="index.html" class="main-nav-link">Etusivu</a>
+          </li>
+          <li class="main-nav-item">
+            <a href="kotia-etsivat.html" class="main-nav-link">Kotia Etsivät</a>
+          </li>
+          <li class="main-nav-item">
+            <a href="kodin-loytaneet.html" class="main-nav-link"
+              >Kodin Löytäneet</a
+            >
+          </li>
+          <li class="main-nav-item">
+            <a href="adoptoi.html" class="main-nav-link">Adoptoi</a>
+          </li>
+          <a class="main-nav-close-btn" onclick="closeMenu()">
+            <i class="fa-solid fa-circle-xmark"></i>
+          </a>
+        </ul>
+
+        <div class="main-nav-btn-container">
+          <button class="main-nav-theme-btn" onclick="toggleTheme()">
+            <!--Icon generated with js-->
+          </button>
+          <button class="main-nav-menu-btn" onclick="openMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+      <!--navigation ends-->
+
+      <!--Hero section starts-->
+      <div class="hero-section container">
+        <div class="hero-text-container">
+          <h1>
+            Kun etsit parasta ystävää – kodittomat kissat ja koirat odottavat
+            sinua
+          </h1>
+          <p>
+            Etsitkö karvaista perheenjäsentä? Meidän kauttamme löydät kodittomia
+            kissoja ja koiria, jotka kaipaavat rakkautta ja turvaa. Tule
+            tutustumaan ja anna toiselle mahdollisuus – yhdessä voitte
+            kirjoittaa uuden tarinan.
+          </p>
+          <a href="adoptoi.html">Aloita adoptioprosessi</a>
+        </div>
+      </div>
+      <!--Hero section ends-->
+
+      <!--Image grid starts-->
+      <div class="hero-image-grid container">
+        <div class="hero-img-container"></div>
+        <div class="hero-img-container"></div>
+        <div class="hero-img-container"></div>
+      </div>
+      <!--Image grid ends-->
+    </header>
+    <!--HEADER ENDS-->
+
+    <!--MAIN CONTENT STARTS-->
+    <main>
+      <!--Features section starts-->
+      <section class="features-section">
+        <h2>Miksi adoptoida juuri meiltä?</h2>
+        <div class="features-content container">
+          <div class="features-card">
+            <h3>Eläinten hyvinvointi etusijalla</h3>
+            <p>
+              huolehdimme, että jokainen kissa ja koira saa tarvitsemansa hoidon
+              ja rakkauden ennen uutta kotia.
+            </p>
+          </div>
+
+          <div class="features-card">
+            <h3>Tuki myös adoptoinnin jälkeen</h3>
+            <p>
+              saat meiltä neuvoja ja vinkkejä lemmikin arkeen sopeutumiseen.
+            </p>
+          </div>
+
+          <div class="features-card">
+            <h3>Turvallinen prosessi</h3>
+            <p>
+              varmistamme, että jokainen adoptointi tehdään vastuullisesti ja
+              eläimen etua ajatellen.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--Features section ends-->
+
+      <!--How it works section starts-->
+      <section class="how-it-works-section">
+        <h3>Miten prosessi toimii?</h3>
+        <div class="how-it-works-container container">
+          <div class="how-it-works-card">
+            <div class="step">1</div>
+            <h4>Täytä lomake</h4>
+            <p>
+              Aloita täyttämällä adoptiolomake. Kerro meille kodistasi,
+              elämäntilanteestasi ja kokemuksestasi eläinten kanssa. Tämä auttaa
+              löytämään juuri sinulle sopivan koiran tai kissan.
+            </p>
+            <a href="adoptoi.html">Täytä lomake</a>
+          </div>
+
+          <div class="how-it-works-card">
+            <div class="step">2</div>
+            <h4>Haastattelu ja päätös</h4>
+            <p>
+              Kun olemme vastaanottaneet lomakkeen, otamme sinuun yhteyttä
+              sähköpostilla.
+            </p>
+            <ol>
+              <li>
+                Sovimme lyhyen haastattelun (puhelimitse tai videopuheluna)
+              </li>
+              <li>Käymme läpi kotisi olosuhteet ja eläimen tarpeet</li>
+              <li>Teemme yhdessä päätöksen adoptiosta</li>
+            </ol>
+          </div>
+
+          <div class="how-it-works-card">
+            <div class="step">3</div>
+            <h4>Kulukorvaus ja kotiin saapuminen</h4>
+            <p>Kun adoptiopäätös on tehty:</p>
+            <ol>
+              <li>
+                Maksat yhdistyksen kulukorvauksen (sis. rokotukset, sirutuksen
+                ja kuljetuksen)
+              </li>
+              <li>
+                Sovimme noutopaikan (esim. Helsinki-Vantaa tai yhdistyksen
+                sijaintipaikka)
+              </li>
+              <li>Eläin pääsee muuttamaan uuteen kotiinsa</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <!--How it works section starts-->
+
+      <!--FAQ section starts-->
+      <section class="faq-section">
+        <h3>Usein kysytyt kysymykset</h3>
+        <div class="faq-container container">
+          <div class="faq">
+            <div class="faq-question">
+              <p>Paljonko adoptiomaksu on?</p>
+              <span class="faq-arrow" onclick="handleFaqQuestions(0)">
+                <i class="fa-solid fa-arrow-down"></i>
+              </span>
+            </div>
+            <div class="faq-answer">
+              Adoptiomaksu vaihtelee eläimestä riippuen. Maksu kattaa
+              esimerkiksi eläinlääkärikulut, rokotukset, madotukset, sirutuksen
+              ja usein steriloinnin/kastroinnin.
+            </div>
+          </div>
+
+          <div class="faq">
+            <div class="faq-question">
+              <p>jos elämäntilanne muuttuu?</p>
+              <span class="faq-arrow" onclick="handleFaqQuestions(1)">
+                <i class="fa-solid fa-arrow-down"></i>
+              </span>
+            </div>
+            <div class="faq-answer">
+              Kyllä. Jos et jostain syystä pysty huolehtimaan eläimestä,
+              toivomme että palautat sen meille, jotta voimme etsiä sille uuden
+              kodin.
+            </div>
+          </div>
+
+          <div class="faq">
+            <div class="faq-question">
+              <p>jos minulla on jo muita lemmikkejä?</p>
+              <span class="faq-arrow" onclick="handleFaqQuestions(2)">
+                <i class="fa-solid fa-arrow-down"></i>
+              </span>
+            </div>
+            <div class="faq-answer">
+              Kyllä, mutta huomioimme aina eläimen luonteen ja sen, miten se
+              tulee toimeen muiden eläinten kanssa. Kerrothan hakemuksessa
+              lemmikeistäsi.
+            </div>
+          </div>
+
+          <div class="faq">
+            <div class="faq-question">
+              <p>Voinko varata eläimen etukäteen?</p>
+              <span class="faq-arrow" onclick="handleFaqQuestions(3)">
+                <i class="fa-solid fa-arrow-down"></i>
+              </span>
+            </div>
+            <div class="faq-answer">
+              Eläimiä ei yleensä varata pitkäksi aikaa. Haluamme varmistaa, että
+              jokainen eläin pääsee mahdollisimman pian pysyvään kotiin.
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--FAQ section starts-->
+    </main>
+    <!--MAIN CONTENT ENDS-->
+
+    <!--FOOTER STARTS-->
+    <footer>
+      <div class="footer-container container">
+        <h3>Seuraa meitä somessa!</h3>
+        <nav class="footer-nav">
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <a class="footer-nav-link" href="#">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li class="footer-nav-item">
+              <a class="footer-nav-link" href="#">
+                <i class="fa-brands fa-square-instagram"></i>
+              </a>
+            </li>
+            <li class="footer-nav-item">
+              <a class="footer-nav-link" href="#">
+                <i class="fa-brands fa-tiktok"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <!--FOOTER ENDS-->
+    <script src="/js/main.js"></script>
+  </body>
+</html>

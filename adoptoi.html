@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <!--Font awesome-->
+    <script
+      src="https://kit.fontawesome.com/394a5f7d1f.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Happy Tails</title>
+  </head>
+  <body>
+    <!--navigation starts-->
+    <header class="main-header">
+      <nav class="main-nav container">
+        <a href="index.html" class="logo">Happy Tails</a>
+        <ul class="main-nav-list">
+          <li class="main-nav-item">
+            <a href="index.html" class="main-nav-link">Etusivu</a>
+          </li>
+          <li class="main-nav-item">
+            <a href="kotia-etsivat.html" class="main-nav-link">Kotia Etsivät</a>
+          </li>
+          <li class="main-nav-item">
+            <a href="kodin-loytaneet.html" class="main-nav-link"
+              >Kodin Löytäneet</a
+            >
+          </li>
+          <li class="main-nav-item">
+            <a href="adoptoi.html" class="main-nav-link">Adoptoi</a>
+          </li>
+          <a class="main-nav-close-btn" onclick="closeMenu()">
+            <i class="fa-solid fa-circle-xmark"></i>
+          </a>
+        </ul>
+
+        <div class="main-nav-btn-container">
+          <button class="main-nav-theme-btn" onclick="toggleTheme()">
+            <!--Icon generated with js-->
+          </button>
+          <button class="main-nav-menu-btn" onclick="openMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!--navigation ends-->
+
+    <main>
+      <h1 class="adopt-header">Täytä hakemus!</h1>
+      <div class="adopt-container container">
+        <form class="adopt-form">
+          <div class="adopt-input-container">
+            <label for="firstname">Etunimi</label>
+            <input class="adopt-input" type="text" id="firstname" required />
+            <span class="error-message"></span>
+          </div>
+          <div class="adopt-input-container">
+            <label for="lastname">Sukunimi</label>
+            <input class="adopt-input" type="text" id="lastname" required />
+            <span class="error-message"></span>
+          </div>
+          <div class="adopt-input-container">
+            <label for="phone">Puhelinnumero</label>
+            <input class="adopt-input" type="text" id="phone" required />
+            <span class="error-message"></span>
+          </div>
+          <div class="adopt-input-container">
+            <label for="info">Kerro itsestäsi</label>
+            <textarea
+              class="adopt-input"
+              name="info"
+              id="info"
+              rows="10"
+              required
+            ></textarea>
+            <span class="error-message"></span>
+          </div>
+          <button class="adopt-send-btn" type="button" onclick="openModal()">
+            Lähetä
+          </button>
+        </form>
+      </div>
+
+      <div class="adopt-modal">
+        <div class="adopt-modal-content">
+          <h3>Kiitos!</h3>
+          <p>
+            Käsittelemme hakemuksen mahdollisimman pian ja olemme sinuun
+            yhteydessä❤️
+          </p>
+          <button onclick="closeModal()">Selvä</button>
+        </div>
+      </div>
+    </main>
+
+    <!--FOOTER STARTS-->
+    <footer>
+      <div class="footer-container container">
+        <h3>Seuraa meitä somessa!</h3>
+        <nav class="footer-nav">
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <a class="footer-nav-link" href="#">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li class="footer-nav-item">
+              <a class="footer-nav-link" href="#">
+                <i class="fa-brands fa-square-instagram"></i>
+              </a>
+            </li>
+            <li class="footer-nav-item">
+              <a class="footer-nav-link" href="#">
+                <i class="fa-brands fa-tiktok"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <!--FOOTER ENDS-->
+
+    <script src="/js/main.js"></script>
+    <script src="/js/adopt.js"></script>
+  </body>
+</html>

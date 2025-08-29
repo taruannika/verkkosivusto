@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <!--Font awesome-->
+    <script
+      src="https://kit.fontawesome.com/394a5f7d1f.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Happy Tails</title>
+  </head>
+  <body>
+    <!--navigation starts-->
+    <header class="main-header">
+      <nav class="main-nav container">
+        <a href="index.html" class="logo">Happy Tails</a>
+        <ul class="main-nav-list">
+          <li class="main-nav-item">
+            <a href="index.html" class="main-nav-link">Etusivu</a>
+          </li>
+          <li class="main-nav-item">
+            <a href="kotia-etsivat.html" class="main-nav-link">Kotia Etsivät</a>
+          </li>
+          <li class="main-nav-item">
+            <a href="kodin-loytaneet.html" class="main-nav-link"
+              >Kodin Löytäneet</a
+            >
+          </li>
+          <li class="main-nav-item">
+            <a href="adoptoi.html" class="main-nav-link">Adoptoi</a>
+          </li>
+          <a class="main-nav-close-btn" onclick="closeMenu()">
+            <i class="fa-solid fa-circle-xmark"></i>
+          </a>
+        </ul>
+
+        <div class="main-nav-btn-container">
+          <button class="main-nav-theme-btn" onclick="toggleTheme()">
+            <!--Icon generated with js-->
+          </button>
+          <button class="main-nav-menu-btn" onclick="openMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!--navigation ends-->
+
+    <main>
+      <section class="looking-home-container container">
+        <h1>Me etsimme omaa kotia</h1>
+        <div class="looking-home-filter-container">
+          <label for="looking-home-filter">Näytä:</label>
+          <select name="animal-filter" id="looking-home-filter">
+            <option value="all">Kaikki kotia etsivät</option>
+            <option value="cat">Kaikki kotia etsivät kissat</option>
+            <option value="dog">Kaikki kotia etsivät koirat</option>
+          </select>
+        </div>
+        <div class="looking-home-grid">
+          <!--Generated with js-->
+        </div>
+      </section>
+    </main>
+
+    <!--FOOTER STARTS-->
+    <footer>
+      <div class="footer-container container">
+        <h3>Seuraa meitä somessa!</h3>
+        <nav class="footer-nav">
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <a class="footer-nav-link" href="#">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li class="footer-nav-item">
+              <a class="footer-nav-link" href="#">
+                <i class="fa-brands fa-square-instagram"></i>
+              </a>
+            </li>
+            <li class="footer-nav-item">
+              <a class="footer-nav-link" href="#">
+                <i class="fa-brands fa-tiktok"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <!--FOOTER ENDS-->
+
+    <script src="/js/main.js"></script>
+    <script src="/js/looking-home.js"></script>
+  </body>
+</html>
